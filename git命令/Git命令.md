@@ -105,3 +105,37 @@
 > `feature分支`
 
     每添加一个新功能，最好新建一个feature分支，在上面开发，合并，最后删除
+
+### 8.标签管理
+
+> `创建标签`
+
+    # 切换到某分支打标签
+    git tag v1.0
+    
+    # 查看分支
+    git tag
+   
+    # 给某次提交打标签
+    git tag v0.99 [commit id]
+
+    # 查看标签信息
+    git show v1.0
+
+    # 指定标签信息
+    git tag -a [tagname] -m "blablabla..."
+
+> `删除标签`
+
+    # 删除本地标签
+    git tag -d v1.0
+
+    # 推送标签到远程
+    git push origin v1.0
+
+    # 一次性推送
+    git push origin --tags
+
+    # 删除远程标签
+    git tag -d v1.0
+    git push origin :refs/tags/v1.0
