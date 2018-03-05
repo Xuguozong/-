@@ -139,3 +139,8 @@
     # 删除远程标签
     git tag -d v1.0
     git push origin :refs/tags/v1.0
+
+### 9.配置别名
+
+    # 将git status 配置为 git st
+    git config --global alias.st status
